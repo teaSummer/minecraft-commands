@@ -1,0 +1,16 @@
+# 文件名称说明
+available: 当前可用的命令（不含developer和joke）
+developer: 开发者版本独有命令
+entire: 全部命令
+joke: 愚人节版本独有命令
+removed: 已移除的命令（不含developer和joke）
+whole: 全部命令（不含developer和joke）
+
+# 文件夹名称说明
+all-editions: 所有版本（都加入过）的命令
+bedrock-edition: 基岩版独有命令
+bedrock-education-editions: 基岩版和教育版的独有命令
+education-edition: 教育版独有命令
+java-bedrock-editions: Java版和基岩版的独有命令
+java-edition: Java版独有命令
+where: 暂时还不确定版本的命令（不过可能已经放在以上文件夹中）

@@ -1,0 +1,16 @@
+attack
+createagent
+destroy
+detect
+detectredstone
+drop
+executeasother
+executeasself
+getitemcount
+getitemdetail
+getitemspace
+inspect
+inspectdata
+place
+till
+transferserver

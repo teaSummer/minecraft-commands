@@ -1,0 +1,187 @@
+name: Helper
+run-name: Quick Update (Test)
+on:
+  workflow_dispatch:
+    inputs:
+      category:
+        description: 'Category'
+        type: choice
+        default: 'Commands'
+        required: true
+        options: [ 'Commands' ]
+      edition:
+        description: 'Editions'
+        type: choice
+        required: false
+        options: [ 'All', 'Java & Bedrock', 'Bedrock & Education', 'Java', 'Bedrock', 'Education' ]
+      status:
+        description: 'Status'
+        type: choice
+        default: 'Available'
+        required: true
+        options: [ 'Available', 'Removed', 'Developer', 'Joke', "N/A" ]
+      ar_command:
+        description: '+/- commands'
+        type: boolean
+        default: true
+        required: true
+      command_change:
+        description: 'Command changes'
+        type: string
+        required: true
+
+jobs:
+  update:
+    name: Update
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - name: Data
+        id: data
+        run: |
+          declare -l edition='${{ inputs.edition }}'
+          declare -l status='${{ inputs.status }}'
+          declare -l change='${{ inputs.command_change }}'
+          edition=${edition// & /-}
+          if [[ $edition = *-* ]] || [ $edition = 'all' ]; then
+            edition=$edition-editions
+          else
+            edition=$edition-edition
+          fi
+          path='commands/entire.txt'
+          cmdfile="commands/$edition/$status.txt"
+          if [ $status = 'n/a' ]; then
+            path="commands/where/entire.txt $path"
+          elif [ $status != 'joke' -a $status != 'developer' ]; then
+            path="$cmdfile commands/$status.txt $path"
+          fi
+          if ! [ -f $cmdfile -o $status = 'n/a' ]; then
+            echo '[Error]No such file or directory.'
+            exit 1
+          fi
+          change=${change// /}
+          change_1=${change//[A-Za-z_;\/=+-]/}
+          if [ "$change_1" ]; then
+            echo '[Error]Invalid syntax.'
+            exit 1
+          fi
+          #############################
+          echo "$change: $path"
+          echo "path=$path" >> $GITHUB_OUTPUT
+          echo "change=$change" >> $GITHUB_OUTPUT
+      - name: +/-
+        if: ${{ inputs.ar_command == true && steps.data.conclusion == 'success' }}
+        run: |
+          path='${{ steps.data.outputs.path }}'
+          change='${{ steps.data.outputs.change }};'
+          i=1
+          if [[ $change = *=* ]]; then
+            echo '[Error]Invalid syntax.'
+            exit 1
+          fi
+          while ((1==1)); do
+            cmd=`echo $change | cut -d ';' -f $i`
+            if ! [ $cmd ]; then
+              break
+            else
+              if [[ $cmd = -* ]]; then
+                mode='-'
+                cmd=${cmd:1}
+              else
+                mode='+'
+                if [[ $cmd = +* ]]; then
+                  cmd=${cmd:1}
+                fi
+              fi
+              if [[ $cmd = /* ]]; then
+                cmd=${cmd:1}
+              fi
+              echo "Run ($cmd):"
+              #############################
+              for file in $path; do
+                cp $file $file-1
+                if [ $mode = '+' ]; then
+                  echo $cmd >> $file
+                else
+                  sed "s/^$cmd$//g" $file | sed '/^$/d' > $file-2
+                  mv $file-2 $file
+                fi
+                cat $file | xargs
+                if ! [ "`diff -q $file $file-1`" ]; then
+                  echo '[Error]No difference.'
+                  exit 1
+                fi
+                rm $file-1
+              done
+              echo
+              ((i++))
+            fi
+          done
+      - name: Modify
+        if: ${{ inputs.ar_command == false && steps.data.conclusion == 'success' }}
+        run: |
+          path='${{ steps.data.outputs.path }}'
+          change='${{ steps.data.outputs.change }};'
+          i=1
+          if [[ $change = *+* ]] || [[ $change = *-* ]]; then
+            echo '[Error]Invalid syntax.'
+            exit 1
+          fi
+          while ((1==1)); do
+            cmd=`echo $change | cut -d ';' -f $i`
+            if ! [ $cmd ]; then
+              break
+            else
+              if [[ $cmd = /* ]]; then
+                cmd=${cmd:1}
+              fi
+              echo "Run ($cmd):"
+              #############################
+              for file in $path; do
+                cp $file $file-1
+                from=`echo $cmd | cut -d '=' -f 1`
+                to=`echo $cmd | cut -d '=' -f 2`
+                if [[ $to = /* ]]; then
+                  to=${to:1}
+                fi
+                sed "s/^$from$/$to/g" $file | sed '/^$/d' > $file-2
+                mv $file-2 $file
+                cat $file | xargs
+                if ! [ "`diff -q $file $file-1`" ]; then
+                  echo '[Error]No difference.'
+                  exit 1
+                fi
+                rm $file-1
+              done
+              echo
+              ((i++))
+            fi
+          done
+      - name: Sort (Modify (.))
+        run: |
+          function getdir() {
+            for file in $1/*; do
+              if [ -f $file ]; then
+                file=${file:2}
+                if [[ $file = *.txt ]]; then
+                  echo $file
+                  sort -u $file -o $file
+                fi
+              else
+                getdir $file
+              fi
+            done
+          }
+          getdir .
+      - name: Test
+        run: |
+          path='${{ steps.data.outputs.path }}'
+          for file in $path; do
+            cat $file | xargs
+          done
+      - name: Commit & Push
+        if: ${{ false }}}
+        uses: stefanzweifel/git-auto-commit-action@master
+        with:
+          commit_message: 'Quick update'
+          branch: main
