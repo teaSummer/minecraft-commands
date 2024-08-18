@@ -39,9 +39,24 @@ jobs:
       - name: Data
         id: data
         run: |
+          function getdir() {
+            for file in $1/*; do
+              if [ -f $file ]; then
+                file=${file:2}
+                if [[ $file = *.txt ]]; then
+                  full_path="$full_path $file"
+                fi
+              else
+                getdir $file
+              fi
+            done
+          }
           declare -l edition='${{ inputs.edition }}'
           declare -l status='${{ inputs.status }}'
           declare -l change='${{ inputs.command_change }}'
+          full_path=''
+          getdir .
+          full_path=${full_path:1}
           edition=${edition// & /-}
           if [[ $edition = *-* ]] || [ $edition = 'all' ]; then
             edition=$edition-editions
@@ -68,11 +83,13 @@ jobs:
           #############################
           echo "$change: $path"
           echo "path=$path" >> $GITHUB_OUTPUT
+          echo "full_path=$full_path" >> $GITHUB_OUTPUT
           echo "change=$change" >> $GITHUB_OUTPUT
       - name: +/-
         if: ${{ inputs.ar_command == true && steps.data.conclusion == 'success' }}
         run: |
           path='${{ steps.data.outputs.path }}'
+          full_path='${{ steps.data.outputs.full_path }}'
           change='${{ steps.data.outputs.change }};'
           i=1
           if [[ $change = *=* ]]; then
@@ -97,6 +114,11 @@ jobs:
                 cmd=${cmd:1}
               fi
               echo "Run ($cmd):"
+              if [[ path = */where/* ]]; then
+                if [ $mode = '-' ]; then
+                  path=$full_path
+                fi
+              fi
               #############################
               for file in $path; do
                 cp $file $file-1
@@ -108,8 +130,10 @@ jobs:
                 fi
                 cat $file | xargs
                 if ! [ "`diff -q $file $file-1`" ]; then
-                  echo '[Error]No difference.'
-                  exit 1
+                  if [[ path != */where/* ]]; then
+                    echo '[Error]No difference.'
+                    exit 1
+                  fi
                 fi
                 rm $file-1
               done
@@ -121,6 +145,7 @@ jobs:
         if: ${{ inputs.ar_command == false && steps.data.conclusion == 'success' }}
         run: |
           path='${{ steps.data.outputs.path }}'
+          full_path='${{ steps.data.outputs.full_path }}'
           change='${{ steps.data.outputs.change }};'
           i=1
           if [[ $change = *+* ]] || [[ $change = *-* ]]; then
@@ -136,6 +161,9 @@ jobs:
                 cmd=${cmd:1}
               fi
               echo "Run ($cmd):"
+              if [[ path = */where/* ]]; then
+                path=$full_path
+              fi
               #############################
               for file in $path; do
                 cp $file $file-1
@@ -148,8 +176,10 @@ jobs:
                 mv $file-2 $file
                 cat $file | xargs
                 if ! [ "`diff -q $file $file-1`" ]; then
-                  echo '[Error]No difference.'
-                  exit 1
+                  if [[ path != */where/* ]]; then
+                    echo '[Error]No difference.'
+                    exit 1
+                  fi
                 fi
                 rm $file-1
               done
