@@ -21,7 +21,6 @@ closechat
 closewebsocket
 code
 codebuilder
-codebuilder_actorinfo
 connect
 damage
 data

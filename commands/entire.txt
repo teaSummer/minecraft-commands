@@ -52,7 +52,6 @@ closechat
 closewebsocket
 code
 codebuilder
-codebuilder_actorinfo
 collect
 connect
 crash
