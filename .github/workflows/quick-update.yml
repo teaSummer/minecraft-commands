@@ -1,5 +1,5 @@
 name: Helper
-run-name: Quick Update (Test)
+run-name: Quick Update
 on:
   workflow_dispatch:
     inputs:
