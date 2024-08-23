@@ -137,6 +137,7 @@ titleraw
 tm
 toggledownfall
 tp
+tptoplayer
 transfer
 trigger
 videostream
