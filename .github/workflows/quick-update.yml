@@ -70,7 +70,7 @@ jobs:
           if [ $status = 'n/a' ]; then
             path="commands/where/entire.txt $path"
           elif [ $status != 'joke' -a $status != 'developer' ]; then
-            path="$cmdfile $path"
+            path="$cmdfile commands/$edition/whole.txt $path"
             if [ $common = true ]; then
               path="commands/$status.txt $path"
             fi
