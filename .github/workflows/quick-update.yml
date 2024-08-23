@@ -3,12 +3,6 @@ run-name: Quick Update
 on:
   workflow_dispatch:
     inputs:
-      category:
-        description: 'Category'
-        type: choice
-        default: 'Commands'
-        required: true
-        options: [ 'Commands' ]
       edition:
         description: 'Editions'
         type: choice
@@ -22,6 +16,11 @@ on:
         options: [ 'Available', 'Removed', 'Developer', 'Joke', "N/A" ]
       ar_command:
         description: '+/- commands'
+        type: boolean
+        default: true
+        required: true
+      common:
+        description: 'Is common'
         type: boolean
         default: true
         required: true
@@ -63,17 +62,24 @@ jobs:
           else
             edition=$edition-edition
           fi
-          path='commands/entire.txt'
+          path=''
+          if [ $common = true ]; then
+            path='commands/entire.txt'
+          fi
           cmdfile="commands/$edition/$status.txt"
           if [ $status = 'n/a' ]; then
             path="commands/where/entire.txt $path"
           elif [ $status != 'joke' -a $status != 'developer' ]; then
-            path="$cmdfile commands/$status.txt $path"
+            path="$cmdfile $path"
+            if [ $common = true ]; then
+              path="commands/$status.txt $path"
+            fi
           fi
           if ! [ -f $cmdfile -o $status = 'n/a' ]; then
             echo '[Error]No such file or directory.'
             exit 1
           fi
+          path=`echo $path | sed 's/ $//g'`
           change=${change// /}
           change_1=${change//[A-Za-z_;\/=+-]/}
           if [ "$change_1" ]; then
@@ -113,7 +119,7 @@ jobs:
               if [[ $cmd = /* ]]; then
                 cmd=${cmd:1}
               fi
-              echo "Run ($cmd):"
+              echo "=== Run ($mode$cmd) ==="
               if [[ path = */where/* ]]; then
                 if [ $mode = '-' ]; then
                   path=$full_path
@@ -160,7 +166,7 @@ jobs:
               if [[ $cmd = /* ]]; then
                 cmd=${cmd:1}
               fi
-              echo "Run ($cmd):"
+              echo "=== Run ($cmd) ==="
               if [[ path = */where/* ]]; then
                 path=$full_path
               fi
