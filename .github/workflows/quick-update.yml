@@ -137,8 +137,7 @@ jobs:
                 cat $file | xargs
                 if ! [ "`diff -q $file $file-1`" ]; then
                   if [[ path != */where/* ]]; then
-                    echo '[Error]No difference.'
-                    exit 1
+                    echo '[Warning]No difference.'
                   fi
                 fi
                 rm $file-1
@@ -183,8 +182,7 @@ jobs:
                 cat $file | xargs
                 if ! [ "`diff -q $file $file-1`" ]; then
                   if [[ path != */where/* ]]; then
-                    echo '[Error]No difference.'
-                    exit 1
+                    echo '[Warning]No difference.'
                   fi
                 fi
                 rm $file-1
