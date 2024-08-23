@@ -6,5 +6,6 @@ codebuilder
 geteduclientinfo
 geteduserverinfo
 lesson
+remove
 resourceuri
 videostream

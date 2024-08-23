@@ -91,6 +91,7 @@ random
 recipe
 reload
 reloadconfig
+remove
 replace
 replaceitem
 resourceuri

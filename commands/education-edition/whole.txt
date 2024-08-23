@@ -10,6 +10,7 @@ geteduserverinfo
 lesson
 move
 position
+remove
 resourceuri
 tpagent
 transfer
