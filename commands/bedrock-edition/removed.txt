@@ -4,4 +4,3 @@ resupply
 setfixedinvslot
 setfixedinvslots
 volumearea
-whitelist
