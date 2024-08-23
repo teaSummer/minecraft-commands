@@ -53,6 +53,7 @@ jobs:
           declare -l edition='${{ inputs.edition }}'
           declare -l status='${{ inputs.status }}'
           declare -l change='${{ inputs.command_change }}'
+          common='${{ inputs.common }}'
           full_path=''
           getdir .
           full_path=${full_path:1}
@@ -63,7 +64,7 @@ jobs:
             edition=$edition-edition
           fi
           path=''
-          if [ $common = true ]; then
+          if [ $common = 'true' ]; then
             path='commands/entire.txt'
           fi
           cmdfile="commands/$edition/$status.txt"
@@ -71,7 +72,7 @@ jobs:
             path="commands/where/entire.txt $path"
           elif [ $status != 'joke' -a $status != 'developer' ]; then
             path="$cmdfile commands/$edition/whole.txt $path"
-            if [ $common = true ]; then
+            if [ $common = 'true' ]; then
               path="commands/$status.txt $path"
             fi
           fi
