@@ -76,7 +76,7 @@ jobs:
             fi
           fi
           if ! [ -f $cmdfile -o $status = 'n/a' ]; then
-            echo '[Error]No such file or directory.'
+            echo "[Error]No such file or directory ($cmdfile)."
             exit 1
           fi
           path=`echo $path | sed 's/ $//g'`
@@ -138,7 +138,7 @@ jobs:
                 sort -u $file -o $file
                 if ! [ "`diff -q $file $file-1`" ]; then
                   if [[ path != */where/* ]]; then
-                    echo '[Warning]No difference.'
+                    echo "[Warning]No difference ($file)."
                   fi
                 fi
                 rm $file-1
@@ -184,7 +184,7 @@ jobs:
                 sort -u $file -o $file
                 if ! [ "`diff -q $file $file-1`" ]; then
                   if [[ path != */where/* ]]; then
-                    echo '[Warning]No difference.'
+                    echo "[Warning]No difference ($file)."
                   fi
                 fi
                 rm $file-1
