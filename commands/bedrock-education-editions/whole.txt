@@ -19,6 +19,7 @@ enableencryption
 event
 executeasother
 executeasself
+executedetect
 fog
 gametest
 getchunkdata

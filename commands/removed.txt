@@ -16,6 +16,7 @@ dropall
 entitydata
 executeasother
 executeasself
+executedetect
 getitemcount
 getitemdetail
 getitemspace

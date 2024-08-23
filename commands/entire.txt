@@ -89,6 +89,7 @@ event
 execute
 executeasother
 executeasself
+executedetect
 experience
 fill
 fillbiome
