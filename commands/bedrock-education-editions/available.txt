@@ -39,6 +39,7 @@ testforblocks
 tickingarea
 titleraw
 toggledownfall
+tptoplayer
 wb
 worldbuilder
 wsserver
