@@ -66,7 +66,9 @@ jobs:
           cmdfile="commands/$edition/$status.txt"
           if [ $status = 'n/a' ]; then
             path="commands/where/entire.txt $path"
-          elif [ $status != 'joke' -a $status != 'developer' ]; then
+          elif [ $status = 'joke' -o $status = 'developer' ]; then
+            path="$cmdfile $path"
+          else
             path="$cmdfile commands/$edition/whole.txt $path"
             if [ $common = 'true' ]; then
               path="commands/$status.txt commands/whole.txt $path"
