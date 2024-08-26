@@ -1,11 +1,9 @@
 classroommode
 closechat
-closewebsocket
 code
 codebuilder
 geteduclientinfo
 geteduserverinfo
 lesson
 remove
-resourceuri
 videostream

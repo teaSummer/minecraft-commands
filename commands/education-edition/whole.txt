@@ -1,6 +1,5 @@
 classroommode
 closechat
-closewebsocket
 code
 codebuilder
 collect
@@ -11,7 +10,6 @@ lesson
 move
 position
 remove
-resourceuri
 tpagent
 transfer
 turn
