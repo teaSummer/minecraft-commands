@@ -5,6 +5,7 @@ allowlist
 alwaysday
 camerashake
 clearspawnpoint
+closewebsocket
 codebuilder_actorinfo
 connect
 daylock
@@ -29,6 +30,7 @@ permission
 playanimation
 querytarget
 replaceitem
+resourceuri
 script
 setmaxplayers
 structure

@@ -6,6 +6,7 @@ alwaysday
 attack
 camerashake
 clearspawnpoint
+closewebsocket
 codebuilder_actorinfo
 connect
 createagent
@@ -44,6 +45,7 @@ place
 playanimation
 querytarget
 replaceitem
+resourceuri
 script
 setmaxplayers
 structure
