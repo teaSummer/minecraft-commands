@@ -1,3 +1,4 @@
+# Used for Minecraft commands | 用于 Minecraft 中的命令
 name: Helper
 run-name: Quick Update
 on:
@@ -73,7 +74,7 @@ jobs:
           elif [ $status != 'joke' -a $status != 'developer' ]; then
             path="$cmdfile commands/$edition/whole.txt $path"
             if [ $common = 'true' ]; then
-              path="commands/$status.txt $path"
+              path="commands/$status.txt commands/whole.txt $path"
             fi
           fi
           if ! [ -f $cmdfile -o $status = 'n/a' ]; then
@@ -93,7 +94,7 @@ jobs:
           echo "full_path=$full_path" >> $GITHUB_OUTPUT
           echo "change=$change" >> $GITHUB_OUTPUT
       - name: +/-
-        if: ${{ inputs.ar_command == true && steps.data.conclusion == 'success' }}
+        if: ${{ inputs.ar_command == true }}
         run: |
           path='${{ steps.data.outputs.path }}'
           full_path='${{ steps.data.outputs.full_path }}'
@@ -128,6 +129,10 @@ jobs:
               fi
               #############################
               for file in $path; do
+                if ! [ "$cmd" ]; then
+                  echo '[Error]Invalid argument.'
+                  exit 1
+                fi
                 cp $file $file-1
                 if [ $mode = '+' ]; then
                   echo $cmd >> $file
@@ -149,7 +154,7 @@ jobs:
             fi
           done
       - name: Modify
-        if: ${{ inputs.ar_command == false && steps.data.conclusion == 'success' }}
+        if: ${{ inputs.ar_command == false }}
         run: |
           path='${{ steps.data.outputs.path }}'
           full_path='${{ steps.data.outputs.full_path }}'
@@ -173,12 +178,16 @@ jobs:
               fi
               #############################
               for file in $path; do
-                cp $file $file-1
                 from=`echo $cmd | cut -d '=' -f 1`
                 to=`echo $cmd | cut -d '=' -f 2`
                 if [[ $to = /* ]]; then
                   to=${to:1}
                 fi
+                if ! [ "$from" -a "$to" ]; then
+                  echo '[Error]Invalid argument.'
+                  exit 1
+                fi
+                cp $file $file-1
                 sed "s/^$from$/$to/g" $file | sed '/^$/d' > $file-2
                 mv $file-2 $file
                 cat $file | xargs
@@ -195,7 +204,6 @@ jobs:
             fi
           done
       - name: Commit & Push
-        if: ${{ false }}}
         uses: stefanzweifel/git-auto-commit-action@master
         with:
           commit_message: 'Quick update'

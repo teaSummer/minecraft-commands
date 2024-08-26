@@ -1,0 +1,12 @@
+add_days
+assignteam
+bsharp
+dd
+giveallresources
+gm
+map_mode_default
+mount
+render
+sprint
+village
+worldstream
