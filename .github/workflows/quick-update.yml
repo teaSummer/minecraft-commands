@@ -155,7 +155,7 @@ jobs:
                 cat $file | xargs
                 sort -u $file -o $file
                 if ! [ "`diff -q $file $file-1`" ]; then
-                  if [[ path != */where/* ]]; then
+                  if [[ $path != */where/* ]]; then
                     echo "[Warning]No difference ($file)."
                   fi
                 fi

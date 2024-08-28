@@ -42,8 +42,8 @@ This is the command list of *Minecraft*.
 ### Folder Name Instruction
 * `all-editions` - All editions' commands (including those that have been added)
 * `bedrock-edition` - Exclusive *Bedrock Edition* commands
-* `bedrock-education-editions` - Exclusive *Bedrock Edition* and *Education Edition* commands
-* `education-edition` - Exclusive *Education Edition* commands
+* `bedrock-education-editions` - Exclusive *Bedrock Edition* and *Minecraft Education* commands
+* `education-edition` - Exclusive *Minecraft Education* commands
 * `java-bedrock-editions` - Exclusive *Java Edition* and *Bedrock Edition* commands
 * `java-edition` - Exclusive *Java Edition* commands
 * `where` - Commands that are not yet determined to be in which edition (but may be in the above folders)
