@@ -3,6 +3,7 @@ ability
 agent
 allowlist
 alwaysday
+camera
 camerashake
 clearspawnpoint
 closewebsocket
@@ -20,18 +21,18 @@ getlocalplayername
 getspawnpoint
 gettopsolidblock
 globalpause
+hud
 immutableworld
 inputpermission
 listd
 mobevent
 music
-ops
-permission
 playanimation
 querytarget
 replaceitem
 resourceuri
 script
+scriptevent
 setmaxplayers
 structure
 takepicture
@@ -41,7 +42,6 @@ testforblocks
 tickingarea
 titleraw
 toggledownfall
-tptoplayer
 wb
 worldbuilder
 wsserver

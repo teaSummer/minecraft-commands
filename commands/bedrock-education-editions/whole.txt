@@ -4,6 +4,7 @@ agent
 allowlist
 alwaysday
 attack
+camera
 camerashake
 clearspawnpoint
 closewebsocket
@@ -32,6 +33,7 @@ getlocalplayername
 getspawnpoint
 gettopsolidblock
 globalpause
+hud
 immutableworld
 inputpermission
 inspect
@@ -39,14 +41,13 @@ inspectdata
 listd
 mobevent
 music
-ops
-permission
 place
 playanimation
 querytarget
 replaceitem
 resourceuri
 script
+scriptevent
 setmaxplayers
 structure
 takepicture
@@ -57,7 +58,6 @@ tickingarea
 till
 titleraw
 toggledownfall
-tptoplayer
 transferserver
 wb
 worldbuilder
