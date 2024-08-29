@@ -26,6 +26,7 @@ inputpermission
 listd
 mobevent
 music
+permission
 playanimation
 querytarget
 replaceitem

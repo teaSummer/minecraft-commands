@@ -40,6 +40,7 @@ inspectdata
 listd
 mobevent
 music
+permission
 place
 playanimation
 querytarget
