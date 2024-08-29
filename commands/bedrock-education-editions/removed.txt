@@ -14,4 +14,5 @@ inspect
 inspectdata
 place
 till
+tptoplayer
 transferserver

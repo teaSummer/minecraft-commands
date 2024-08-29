@@ -58,6 +58,7 @@ tickingarea
 till
 titleraw
 toggledownfall
+tptoplayer
 transferserver
 wb
 worldbuilder
