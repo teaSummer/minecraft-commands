@@ -1,5 +1,4 @@
 allowlist
-camera
 camerashake
 changesetting
 clearrealmevents
@@ -8,9 +7,10 @@ dedicatedwsserver
 event
 fog
 gametips
-hud
 inputpermission
 music
+ops
+permission
 playanimation
 project
 querytarget
@@ -18,7 +18,6 @@ reloadconfig
 replace
 save
 script
-scriptevent
 sendshowstoreoffer
 simulationtype
 structure

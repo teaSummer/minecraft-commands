@@ -1,5 +1,4 @@
 allowlist
-camera
 camerashake
 changesetting
 clearfixedinv
@@ -9,10 +8,11 @@ dedicatedwsserver
 event
 fog
 gametips
-hud
 inputpermission
 mixer
 music
+ops
+permission
 playanimation
 project
 querytarget
@@ -21,7 +21,6 @@ replace
 resupply
 save
 script
-scriptevent
 sendshowstoreoffer
 setfixedinvslot
 setfixedinvslots
