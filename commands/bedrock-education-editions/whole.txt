@@ -1,7 +1,6 @@
 ?
 ability
 agent
-allowlist
 alwaysday
 attack
 camera
