@@ -23,15 +23,11 @@ executeasself
 executedetect
 fog
 gametest
-getchunkdata
-getchunks
 getitemcount
 getitemdetail
 getitemspace
 getlocalplayername
-getspawnpoint
 gettopsolidblock
-globalpause
 hud
 immutableworld
 inputpermission
@@ -50,7 +46,6 @@ script
 scriptevent
 setmaxplayers
 structure
-takepicture
 testfor
 testforblock
 testforblocks

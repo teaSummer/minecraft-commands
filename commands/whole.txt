@@ -66,18 +66,14 @@ gamemode
 gamerule
 gametest
 gametips
-getchunkdata
-getchunks
 geteduclientinfo
 geteduserverinfo
 getitemcount
 getitemdetail
 getitemspace
 getlocalplayername
-getspawnpoint
 gettopsolidblock
 give
-globalpause
 help
 home
 hud
@@ -157,7 +153,6 @@ stopsound
 structure
 summon
 tag
-takepicture
 team
 teammsg
 teleport

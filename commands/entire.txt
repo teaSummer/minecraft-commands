@@ -125,10 +125,8 @@ getavgunaccountedtimepercent
 getblockname
 getbrightness
 getchestcontents
-getchunkdata
 getchunkdirtycount
 getchunkrebuildcount
-getchunks
 getchunksortcount
 getcpu
 getdurability
@@ -153,7 +151,6 @@ getprofilersecondsperupdate
 getresolution
 getselecteditemcount
 getskin
-getspawnpoint
 getstructure
 getsysteminfo
 getsystemmem
@@ -161,7 +158,6 @@ gettopsolidblock
 getviewdistance
 getworldname
 give
-globalpause
 health
 help
 home
@@ -282,7 +278,6 @@ structure
 summon
 systemstat
 tag
-takepicture
 team
 teammsg
 teleport

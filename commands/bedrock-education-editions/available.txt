@@ -14,12 +14,8 @@ enableencryption
 event
 fog
 gametest
-getchunkdata
-getchunks
 getlocalplayername
-getspawnpoint
 gettopsolidblock
-globalpause
 hud
 immutableworld
 inputpermission
@@ -35,7 +31,6 @@ script
 scriptevent
 setmaxplayers
 structure
-takepicture
 testfor
 testforblock
 testforblocks
