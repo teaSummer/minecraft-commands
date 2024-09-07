@@ -4,12 +4,17 @@ code
 codebuilder
 collect
 dropall
+getchunkdata
+getchunks
 geteduclientinfo
 geteduserverinfo
+getspawnpoint
+globalpause
 lesson
 move
 position
 remove
+takepicture
 tpagent
 transfer
 turn

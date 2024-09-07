@@ -2,8 +2,13 @@ classroommode
 closechat
 code
 codebuilder
+getchunkdata
+getchunks
 geteduclientinfo
 geteduserverinfo
+getspawnpoint
+globalpause
 lesson
 remove
+takepicture
 videostream

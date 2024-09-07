@@ -48,11 +48,15 @@ gamemode
 gamerule
 gametest
 gametips
+getchunkdata
+getchunks
 geteduclientinfo
 geteduserverinfo
 getlocalplayername
+getspawnpoint
 gettopsolidblock
 give
+globalpause
 help
 hud
 immutableworld
@@ -117,6 +121,7 @@ stopsound
 structure
 summon
 tag
+takepicture
 team
 teammsg
 teleport
