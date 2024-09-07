@@ -1,6 +1,11 @@
 clearfixedinv
+getchunkdata
+getchunks
+getspawnpoint
+globalpause
 mixer
 resupply
 setfixedinvslot
 setfixedinvslots
+takepicture
 volumearea

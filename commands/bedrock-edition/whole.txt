@@ -4,6 +4,10 @@ clearfixedinv
 clearrealmevents
 dedicatedwsserver
 gametips
+getchunkdata
+getchunks
+getspawnpoint
+globalpause
 mixer
 ops
 project
@@ -15,5 +19,6 @@ sendshowstoreoffer
 setfixedinvslot
 setfixedinvslots
 simulationtype
+takepicture
 volumearea
 whitelist
