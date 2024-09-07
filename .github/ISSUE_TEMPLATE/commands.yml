@@ -1,0 +1,37 @@
+name: Minecraft
+description: Report command changes for Minecraft.
+title: "[Command]: /"
+labels: ["change"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        See [commands/README.md](commands/README.md) for help.
+        Please choose **Editions** and **Status** if you know.
+  - type: dropdown
+    id: editions
+    attributes:
+      label: Editions
+      options:
+        - All
+        - Java & Bedrock
+        - Bedrock & Education
+        - Java
+        - Bedrock
+        - Education
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - Available
+        - Removed
+        - Developer
+        - Joke
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: E.g. changes, screenshots, references, etc.
+    validations:
+      required: true

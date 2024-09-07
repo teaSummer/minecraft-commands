@@ -1,0 +1,24 @@
+name: Minecraft Legends
+description: Report command changes for Minecraft Legends.
+title: "[Command]: /"
+labels: ["legends", "change"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        See [legends-commands/README.md](legends-commands/README.md) for help.
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - Available
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: E.g. changes, screenshots, references, etc.
+    validations:
+      required: true

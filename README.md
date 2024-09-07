@@ -9,7 +9,7 @@
 |        Edition / Game |  Release   |  *Same as  | Snapshot | Preview |
 |----------------------:|:----------:|:----------:|:--------:|:-------:|
 |        *Java Edition* |   1.21.1   |   1.20.5   |    –     |   N/A   |
-|     *Bedrock Edition* |  1.21.22   |  1.21.20   |   N/A    |    –    |
+|     *Bedrock Edition* |  1.21.23   |  1.21.20   |   N/A    |    –    |
 | *Minecraft Education* |  1.21.03   |     –      |   N/A    |    –    |
 |   *Minecraft Legends* | 1.18.19068 | 1.17.24827 |   N/A    |   N/A   |
 * `–` means no special notes required, `N/A` means not applicable.

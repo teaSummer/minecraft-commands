@@ -7,14 +7,14 @@ on:
       edition:
         description: 'Editions'
         type: choice
-        required: false
+        required: true
         options: [ 'All', 'Java & Bedrock', 'Bedrock & Education', 'Java', 'Bedrock', 'Education' ]
       status:
         description: 'Status'
         type: choice
         default: 'Available'
         required: true
-        options: [ 'Available', 'Removed', 'Developer', 'Joke', "N/A" ]
+        options: [ 'Available', 'Removed', 'Developer', 'Joke', 'None' ]
       common:
         description: 'Is common'
         type: boolean
@@ -64,7 +64,7 @@ jobs:
             path='commands/entire.txt'
           fi
           cmdfile="commands/$edition/$status.txt"
-          if [ $status = 'n/a' ]; then
+          if [ $status = 'none' ]; then
             path="commands/where/entire.txt $path"
           elif [ $status = 'joke' -o $status = 'developer' ]; then
             path="$cmdfile $path"
@@ -74,13 +74,13 @@ jobs:
               path="commands/$status.txt commands/whole.txt $path"
             fi
           fi
-          if ! [ -f $cmdfile -o $status = 'n/a' ]; then
+          if ! [ -f $cmdfile -o $status = 'none' ]; then
             echo "[Error]No such file or directory ($cmdfile)."
             exit 1
           fi
           path=`echo $path | sed 's/ $//g'`
           change=${change// /}
-          change_1=${change//[A-Za-z_;\/=+-]/}
+          change_1=${change//[a-z_;\/=+-]/}
           if [ "$change_1" ]; then
             echo '[Error]Invalid syntax.'
             exit 1
@@ -128,6 +128,11 @@ jobs:
                   path=$full_path
                 fi
               fi
+              cmd_1=${cmd//[a-z_=]/}
+              if [ "$cmd_1" ]; then
+                echo '[Error]Invalid syntax.'
+                exit 1
+              fi
               #############################
               for file in $path; do
                 if ! [ "$cmd" ]; then
@@ -138,6 +143,11 @@ jobs:
                 if [ $mode = '=' ]; then
                   from=`echo $cmd | cut -d '=' -f 1`
                   to=`echo $cmd | cut -d '=' -f 2`
+                  from_to=${from//[a-z_]/}${to//[a-z_]/}
+                  if [ "$from_to" ]; then
+                    echo '[Error]Invalid syntax.'
+                    exit 1
+                  fi
                   if ! [ "$from" -a "$to" ]; then
                     echo '[Error]Invalid argument.'
                     exit 1
