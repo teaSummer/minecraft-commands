@@ -9,5 +9,4 @@ reloadconfig
 replace
 save
 sendshowstoreoffer
-simulationtype
 whitelist

@@ -146,7 +146,6 @@ setidletimeout
 setmaxplayers
 setspawn
 setworldspawn
-simulationtype
 solid
 spawnpoint
 spectate

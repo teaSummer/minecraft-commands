@@ -112,7 +112,6 @@ setblock
 setidletimeout
 setmaxplayers
 setworldspawn
-simulationtype
 spawnpoint
 spectate
 spreadplayers
