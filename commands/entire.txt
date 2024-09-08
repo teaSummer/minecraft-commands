@@ -264,6 +264,7 @@ showallitems
 showfrustum
 simlock
 simscale
+simulationtype
 skin
 solid
 spawnfeature

@@ -18,6 +18,7 @@ save
 sendshowstoreoffer
 setfixedinvslot
 setfixedinvslots
+simulationtype
 takepicture
 volumearea
 whitelist

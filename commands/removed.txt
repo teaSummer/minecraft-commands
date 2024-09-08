@@ -32,6 +32,7 @@ resupply
 setfixedinvslot
 setfixedinvslots
 setspawn
+simulationtype
 solid
 stats
 till

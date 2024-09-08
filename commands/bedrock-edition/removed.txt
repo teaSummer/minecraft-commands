@@ -7,5 +7,6 @@ mixer
 resupply
 setfixedinvslot
 setfixedinvslots
+simulationtype
 takepicture
 volumearea
