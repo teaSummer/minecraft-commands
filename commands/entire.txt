@@ -320,7 +320,6 @@ villages
 volumearea
 vote
 w
-warden_spawn_tracker
 warp
 wb
 weather

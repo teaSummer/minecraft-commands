@@ -17,5 +17,4 @@ testforblock
 testforblocks
 toggledownfall
 unban
-warden_spawn_tracker
 wood

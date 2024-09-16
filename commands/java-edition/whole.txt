@@ -50,7 +50,6 @@ tm
 toggledownfall
 trigger
 unban
-warden_spawn_tracker
 whitelist
 wood
 worldborder
