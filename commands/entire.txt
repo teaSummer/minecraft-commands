@@ -71,7 +71,10 @@ datapack
 daylock
 debug
 debugcamera
+debugconfig
 debugdim
+debugmobspawning
+debugpath
 debugprofile
 debugregistryclient
 debugregistryserver
@@ -222,6 +225,7 @@ profile
 project
 publish
 querytarget
+raid
 random
 recipe
 redstonetest
@@ -249,6 +253,7 @@ seed
 selectinventoryitem
 sendmodalform
 sendshowstoreoffer
+serverpack
 setblock
 setbrightness
 setfixedinvslot
@@ -267,6 +272,7 @@ simscale
 simulationtype
 skin
 solid
+spawn_armor_trims
 spawnfeature
 spawning
 spawnitem
@@ -320,6 +326,7 @@ villages
 volumearea
 vote
 w
+warden_spawn_tracker
 warp
 wb
 weather
