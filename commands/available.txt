@@ -92,7 +92,6 @@ recipe
 reload
 reloadconfig
 remove
-replace
 replaceitem
 resourceuri
 return

@@ -122,7 +122,6 @@ recipe
 reload
 reloadconfig
 remove
-replace
 replaceitem
 resourceuri
 resupply

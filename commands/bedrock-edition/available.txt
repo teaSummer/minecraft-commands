@@ -6,7 +6,6 @@ gametips
 ops
 project
 reloadconfig
-replace
 save
 sendshowstoreoffer
 whitelist

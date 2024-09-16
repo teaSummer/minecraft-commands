@@ -1,7 +1,17 @@
-# Instruction | 说明
+<details><br>
+<summary><b>Instruction (English)</b></summary>
+
+This is the command list of *Minecraft Legends*.
+
+### File Name Instruction
+* `available` - Available commands (equivalent to all commands)
+<hr>
+</details>
+
+
 
 <details><br>
-<summary><b>简体中文</b></summary>
+<summary><b>说明（大陆简体）</b></summary>
 
 此为 Minecraft Legends 中的命令列表。
 
@@ -13,11 +23,11 @@
 
 
 <details><br>
-<summary><b>English</b></summary>
+<summary><b>說明（臺灣正體）</b></summary>
 
-This is the command list of *Minecraft Legends*.
+此為 Minecraft Legends 中的指令列表。
 
-### File Name Instruction
-* `available` - Available commands (equivalent to all commands)
+### 檔名稱說明
+* `available` — 當前可用的指令（相當於全部指令）
 <hr>
 </details>
