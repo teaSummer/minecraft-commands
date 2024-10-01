@@ -5,7 +5,7 @@ This is the command list of *Minecraft*.
 
 ### File Name Instruction
 * `available` - Available commands (excluding `developer` and `joke`)
-* `developer` - Exclusive Developer commands
+* `developer` - Exclusive commands for Developer versions and IDE
 * `entire` - All commands
 * `joke` - Exclusive Joke commands
 * `removed` - Removed commands (excluding `developer` and `joke`)
@@ -31,7 +31,7 @@ This is the command list of *Minecraft*.
 
 ### 文件名称说明
 * `available` — 当前可用的命令（不含`developer`和`joke`）
-* `developer` — 开发者版本独有命令
+* `developer` — 开发者版本和集成开发环境（IDE）的独有命令
 * `entire` — 全部命令
 * `joke` — 愚人节版本独有命令
 * `removed` — 已移除的命令（不含`developer`和`joke`）
@@ -57,7 +57,7 @@ This is the command list of *Minecraft*.
 
 ### 檔名稱說明
 * `available` — 當前可用的指令（不含`developer`和`joke`）
-* `developer` — 開發者版本獨有指令
+* `developer` — 開發者版本和集成開發環境（IDE）的獨有指令
 * `entire` — 全部指令
 * `joke` — 愚人節版本獨有指令
 * `removed` — 已移除的指令（不含`developer`和`joke`）

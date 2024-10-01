@@ -10,12 +10,12 @@ Here lists about commands for the editions of *Minecraft* and derivative games.[
 ## Status when Last Update
 |        Edition / Game |  Release   |  *Same as  | Development |
 |----------------------:|:----------:|:----------:|:-----------:|
-|        *Java Edition* |   1.21.1   |   1.20.5   |      –      |
+|        *Java Edition* |   1.21.1   |    1.21    |      –      |
 |     *Bedrock Edition* |  1.21.23   |  1.21.20   |      –      |
 | *Minecraft Education* |  1.21.05   |  1.21.03   |      –      |
 |   *Minecraft Legends* | 1.18.19068 | 1.17.24827 |     N/A     |
 * `–` means no special notes required, `N/A` means not applicable.
-* We don't know the history of Developer commands in *Bedrock Edition*.
+* We don't know the history of commands for Developer versions in *Bedrock Edition*.
 
 [^1]: This repository is NOT affiliated with Mojang.
 [^2]: Some editions/games have no commands or have been replaced, even third-party or modded, they don't record here.
