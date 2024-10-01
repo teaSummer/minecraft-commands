@@ -176,7 +176,7 @@ jobs:
             fi
           done
       - name: Commit & Push
-        uses: stefanzweifel/git-auto-commit-action@master
+        uses: EndBug/add-and-commit@main
         with:
-          commit_message: 'Quick update'
-          branch: main
+          default_author: github_actions
+          message: 'Quick update'

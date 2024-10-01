@@ -11,7 +11,7 @@ Here lists about commands for the editions of *Minecraft* and derivative games.[
 |        Edition / Game |  Release   |  *Same as  | Development |
 |----------------------:|:----------:|:----------:|:-----------:|
 |        *Java Edition* |   1.21.1   |    1.21    |      –      |
-|     *Bedrock Edition* |  1.21.23   |  1.21.20   |      –      |
+|     *Bedrock Edition* |  1.21.31   |  1.21.20   |      –      |
 | *Minecraft Education* |  1.21.05   |  1.21.03   |      –      |
 |   *Minecraft Legends* | 1.18.19068 | 1.17.24827 |     N/A     |
 * `–` means no special notes required, `N/A` means not applicable.
