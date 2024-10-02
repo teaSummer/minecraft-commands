@@ -240,6 +240,7 @@ resupply
 return
 ride
 rot
+rotate
 save
 save-all
 save-off

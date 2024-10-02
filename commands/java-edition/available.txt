@@ -20,6 +20,7 @@ place
 publish
 random
 return
+rotate
 save-all
 save-off
 save-on

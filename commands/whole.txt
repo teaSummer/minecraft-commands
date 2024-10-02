@@ -127,6 +127,7 @@ resourceuri
 resupply
 return
 ride
+rotate
 save
 save-all
 save-off

@@ -96,6 +96,7 @@ replaceitem
 resourceuri
 return
 ride
+rotate
 save
 save-all
 save-off
