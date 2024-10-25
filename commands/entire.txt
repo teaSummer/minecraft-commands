@@ -6,6 +6,7 @@ advancement
 agent
 aicreate
 aigoals
+aimassist
 aistop
 allowlist
 alwaysday

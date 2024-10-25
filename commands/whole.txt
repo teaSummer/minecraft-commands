@@ -3,6 +3,7 @@ ability
 achievement
 advancement
 agent
+aimassist
 allowlist
 alwaysday
 attack

@@ -2,6 +2,7 @@
 ability
 advancement
 agent
+aimassist
 allowlist
 alwaysday
 attribute
