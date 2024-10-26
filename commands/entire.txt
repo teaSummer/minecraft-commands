@@ -256,6 +256,7 @@ selectinventoryitem
 sendmodalform
 sendshowstoreoffer
 serverpack
+set_movement_authority
 setblock
 setbrightness
 setfixedinvslot

@@ -16,6 +16,7 @@ reloadconfig
 resupply
 save
 sendshowstoreoffer
+set_movement_authority
 setfixedinvslot
 setfixedinvslots
 simulationtype

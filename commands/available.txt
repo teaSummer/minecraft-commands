@@ -109,6 +109,7 @@ script
 scriptevent
 seed
 sendshowstoreoffer
+set_movement_authority
 setblock
 setidletimeout
 setmaxplayers
