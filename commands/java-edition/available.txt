@@ -16,7 +16,6 @@ jfr
 pardon
 pardon-ip
 perf
-place
 publish
 random
 return

@@ -12,6 +12,7 @@ getspawnpoint
 globalpause
 lesson
 move
+place
 position
 remove
 takepicture

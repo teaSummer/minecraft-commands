@@ -1,6 +1,7 @@
 collect
 dropall
 move
+place
 position
 tpagent
 transfer

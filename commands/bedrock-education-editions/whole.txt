@@ -37,7 +37,6 @@ listd
 mobevent
 music
 permission
-place
 playanimation
 querytarget
 replaceitem

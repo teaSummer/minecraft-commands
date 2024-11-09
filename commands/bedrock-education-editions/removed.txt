@@ -12,7 +12,6 @@ getitemdetail
 getitemspace
 inspect
 inspectdata
-place
 till
 tptoplayer
 transferserver

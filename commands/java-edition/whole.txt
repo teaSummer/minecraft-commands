@@ -26,7 +26,6 @@ locatebiome
 pardon
 pardon-ip
 perf
-place
 publish
 random
 replaceitem
