@@ -4,5 +4,4 @@ debugpath
 raid
 serverpack
 spawn_armor_trims
-test
 warden_spawn_tracker

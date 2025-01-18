@@ -297,7 +297,6 @@ teammsg
 teleport
 tell
 tellraw
-test
 testassets
 testfor
 testforblock
