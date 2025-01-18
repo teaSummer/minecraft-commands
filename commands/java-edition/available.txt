@@ -28,6 +28,7 @@ setidletimeout
 spectate
 team
 teammsg
+test
 tick
 tm
 trigger

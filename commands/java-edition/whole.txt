@@ -42,6 +42,7 @@ spectate
 stats
 team
 teammsg
+test
 testfor
 testforblock
 testforblocks
