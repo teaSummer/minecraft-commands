@@ -236,6 +236,7 @@ reloadconfig
 remove
 replace
 replaceitem
+resetchunks
 resourceuri
 resupply
 return
