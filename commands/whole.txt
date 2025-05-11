@@ -185,10 +185,12 @@ transferserver
 trigger
 turn
 unban
+version
 videostream
 videostreamaction
 volumearea
 w
+waypoint
 wb
 weather
 whitelist

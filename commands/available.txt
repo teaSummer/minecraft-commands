@@ -143,8 +143,10 @@ tp
 tptoplayer
 transfer
 trigger
+version
 videostream
 w
+waypoint
 wb
 weather
 whitelist

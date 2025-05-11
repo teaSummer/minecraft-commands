@@ -324,6 +324,7 @@ transform
 trigger
 turn
 unban
+version
 videostream
 videostreamaction
 villages
@@ -332,6 +333,7 @@ vote
 w
 warden_spawn_tracker
 warp
+waypoint
 wb
 weather
 whitelist
