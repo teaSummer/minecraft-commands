@@ -3,6 +3,7 @@ allowlist
 changesetting
 clearfixedinv
 clearrealmevents
+controlscheme
 dedicatedwsserver
 gametips
 getchunkdata
@@ -16,7 +17,6 @@ reloadconfig
 resupply
 save
 sendshowstoreoffer
-set_movement_authority
 setfixedinvslot
 setfixedinvslots
 simulationtype

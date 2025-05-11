@@ -2,6 +2,7 @@ aimassist
 allowlist
 changesetting
 clearrealmevents
+controlscheme
 dedicatedwsserver
 gametips
 ops
@@ -9,5 +10,4 @@ project
 reloadconfig
 save
 sendshowstoreoffer
-set_movement_authority
 whitelist

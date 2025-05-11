@@ -58,6 +58,7 @@ codebuilder_actorinfo
 collect
 compactdb
 connect
+controlscheme
 corruptworld
 crash
 crashclient
@@ -257,7 +258,6 @@ selectinventoryitem
 sendmodalform
 sendshowstoreoffer
 serverpack
-set_movement_authority
 setblock
 setbrightness
 setfixedinvslot

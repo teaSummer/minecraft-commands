@@ -32,6 +32,7 @@ codebuilder
 codebuilder_actorinfo
 collect
 connect
+controlscheme
 createagent
 damage
 data
@@ -140,7 +141,6 @@ script
 scriptevent
 seed
 sendshowstoreoffer
-set_movement_authority
 setblock
 setfixedinvslot
 setfixedinvslots
