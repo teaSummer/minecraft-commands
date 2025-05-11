@@ -8,12 +8,12 @@ Here lists about commands for the editions of *Minecraft* and derivative games.[
 2. [legends-commands/README.md](legends-commands/README.md)
 
 ## Status when Last Update
-|        Edition / Game |   Release   |  *Same as  | Development |
-|----------------------:|:-----------:|:----------:|:-----------:|
-|        *Java Edition* |   1.21.5    |     –      |   25w03a    |
-|     *Bedrock Edition* | 1.21.50 (E) |     –      |      –      |
-| *Minecraft Education* |   1.21.06   |  1.21.03   |      –      |
-|   *Minecraft Legends* | 1.18.19068  | 1.17.24827 |     N/A     |
+|        Edition / Game |  Release   |  *Same as  | Development |
+|----------------------:|:----------:|:----------:|:-----------:|
+|        *Java Edition* |   1.21.6   |     –      |   25w19a    |
+|     *Bedrock Edition* |  1.21.90   |     –      | 1.21.90.23  |
+| *Minecraft Education* |  1.21.10   |  1.21.03   |      –      |
+|   *Minecraft Legends* | 1.18.19068 | 1.17.24827 |     N/A     |
 * `–` means no special notes required, `N/A` means not applicable.
 * If it ends with `(E)`, means some features require enabling Experiments.
 * We don't know the history of commands for Developer versions in *Bedrock Edition*.
