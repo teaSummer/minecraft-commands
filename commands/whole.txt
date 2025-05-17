@@ -45,6 +45,7 @@ deop
 destroy
 detect
 detectredstone
+dialog
 dialogue
 difficulty
 drop

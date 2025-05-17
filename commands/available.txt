@@ -33,6 +33,7 @@ debug
 dedicatedwsserver
 defaultgamemode
 deop
+dialog
 dialogue
 difficulty
 effect

@@ -87,6 +87,7 @@ destroy
 destroyblock
 detect
 detectredstone
+dialog
 dialogue
 difficulty
 drop
