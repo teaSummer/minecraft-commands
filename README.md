@@ -1,5 +1,5 @@
 # Minecraft Commands[^1]
-* **English** | [大陆简体](README-cn.md) | [臺灣正體](README-tw.md)
+* English | [大陆简体](README.zh-cn.md) | [臺灣正體](README.zh-tw.md)
 
 Here lists about commands for the editions of *Minecraft* and derivative games.[^2]
 
@@ -10,8 +10,8 @@ Here lists about commands for the editions of *Minecraft* and derivative games.[
 ## Status when Last Update
 |        Edition / Game |  Release   |  *Same as  | Development |
 |----------------------:|:----------:|:----------:|:-----------:|
-|        *Java Edition* |   1.21.6   |     –      |   25w20a    |
-|     *Bedrock Edition* |  1.21.90   |     –      | 1.21.90.25  |
+|        *Java Edition* |   1.21.6   |     –      |      –      |
+|     *Bedrock Edition* |  1.21.90   |     –      |      –      |
 | *Minecraft Education* |  1.21.10   |  1.21.03   |      –      |
 |   *Minecraft Legends* | 1.18.19068 | 1.17.24827 |     N/A     |
 * `–` means no special notes required, `N/A` means not applicable.
