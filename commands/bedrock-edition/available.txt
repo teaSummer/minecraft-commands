@@ -1,13 +1,3 @@
-aimassist
-allowlist
-changesetting
-clearrealmevents
-controlscheme
-dedicatedwsserver
 gametips
-ops
+packstack
 project
-reloadconfig
-save
-sendshowstoreoffer
-whitelist

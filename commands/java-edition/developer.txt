@@ -1,3 +1,4 @@
+chase
 debugconfig
 debugmobspawning
 debugpath

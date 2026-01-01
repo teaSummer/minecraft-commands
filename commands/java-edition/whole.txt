@@ -17,6 +17,7 @@ defaultgamemode
 dialog
 entitydata
 experience
+fetchprofile
 fillbiome
 forceload
 home
@@ -41,6 +42,8 @@ setspawn
 solid
 spectate
 stats
+stopwatch
+swing
 team
 teammsg
 test

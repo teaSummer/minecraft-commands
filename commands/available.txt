@@ -42,6 +42,7 @@ enchant
 event
 execute
 experience
+fetchprofile
 fill
 fillbiome
 fog
@@ -79,6 +80,7 @@ msg
 music
 op
 ops
+packstack
 pardon
 pardon-ip
 particle
@@ -94,6 +96,7 @@ random
 recipe
 reload
 reloadconfig
+reloadpacketlimitconfig
 remove
 replaceitem
 resourceuri
@@ -120,8 +123,10 @@ spectate
 spreadplayers
 stop
 stopsound
+stopwatch
 structure
 summon
+swing
 tag
 takepicture
 team

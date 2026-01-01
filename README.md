@@ -3,20 +3,19 @@
 
 Here lists about commands for the editions of *Minecraft* and derivative games.[^2]
 
-## More Instructions
-1. [commands/README.md](commands/README.md)
-2. [legends-commands/README.md](legends-commands/README.md)
+([Instructions of file and folder names](https://github.com/teaSummer/minecraft-commands/wiki/Names))
 
 ## Status when Last Update
 |        Edition / Game |  Release   |  *Same as  | Development |
 |----------------------:|:----------:|:----------:|:-----------:|
-|        *Java Edition* |   1.21.6   |     –      |      –      |
-|     *Bedrock Edition* |  1.21.90   |     –      |      –      |
-| *Minecraft Education* |  1.21.10   |  1.21.03   |      –      |
+|        *Java Edition* |    26.1    |     –      | snapshot-1  |
+|     *Bedrock Edition* |    26.0    |     –      |   26.0.26   |
+| *Minecraft Education* |  1.21.131  |     –      | 1.21.131.1  |
 |   *Minecraft Legends* | 1.18.19068 | 1.17.24827 |     N/A     |
+* April Fools' version: 25w14craftmine
 * `–` means no special notes required, `N/A` means not applicable.
-* If it ends with `(E)`, means some features require enabling Experiments.
-* We don't know the history of commands for Developer versions in *Bedrock Edition*.
+* If it ends with `(E)`, means some features require enabling experiments.
+* We don't know the history of commands for developer versions in *Bedrock Edition*.
 
 [^1]: This repository is NOT affiliated with Mojang.
 [^2]: Some editions/games have no commands or have been replaced, even third-party or modded, they don't record here.

@@ -1,6 +1,6 @@
 name: Minecraft
 description: Report command changes for Minecraft.
-title: "[Command]: /"
+title: "[MC-Command]: <PUT COMMAND HERE>"
 labels: ["change"]
 body:
   - type: markdown

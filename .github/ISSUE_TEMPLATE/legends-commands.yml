@@ -1,6 +1,6 @@
 name: Minecraft Legends
 description: Report command changes for Minecraft Legends.
-title: "[Command]: /"
+title: "[MCLG-Command]: <PUT COMMAND HERE>"
 labels: ["legends", "change"]
 body:
   - type: markdown

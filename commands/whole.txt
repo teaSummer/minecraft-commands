@@ -60,6 +60,7 @@ executeasother
 executeasself
 executedetect
 experience
+fetchprofile
 fill
 fillbiome
 fog
@@ -107,6 +108,7 @@ msg
 music
 op
 ops
+packstack
 pardon
 pardon-ip
 particle
@@ -124,6 +126,7 @@ random
 recipe
 reload
 reloadconfig
+reloadpacketlimitconfig
 remove
 replaceitem
 resourceuri
@@ -157,8 +160,10 @@ spreadplayers
 stats
 stop
 stopsound
+stopwatch
 structure
 summon
+swing
 tag
 takepicture
 team

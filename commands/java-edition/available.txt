@@ -10,6 +10,7 @@ debug
 defaultgamemode
 dialog
 experience
+fetchprofile
 fillbiome
 forceload
 item
@@ -27,6 +28,8 @@ save-on
 seed
 setidletimeout
 spectate
+stopwatch
+swing
 team
 teammsg
 test

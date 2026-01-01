@@ -106,6 +106,7 @@ executeasother
 executeasself
 executedetect
 experience
+fetchprofile
 fill
 fillbiome
 fillchestblock
@@ -190,6 +191,7 @@ kill
 kit
 leaveworld
 lesson
+level
 list
 listd
 loadbehaviortreedefinitions
@@ -210,6 +212,7 @@ networkstats
 notifyprofiler
 op
 ops
+packstack
 pardon
 pardon-ip
 particle
@@ -235,14 +238,15 @@ redstonetest
 register3pserver
 reload
 reloadconfig
+reloadpacketlimitconfig
 remove
-replace
 replaceitem
 resetchunks
 resourceuri
 resupply
 return
 ride
+room
 rot
 rotate
 save
@@ -289,8 +293,10 @@ stats
 stop
 stopsound
 stoptime
+stopwatch
 structure
 summon
+swing
 systemstat
 tag
 takepicture
@@ -325,6 +331,8 @@ transform
 trigger
 turn
 unban
+unlock
+unlock_world_effect
 version
 videostream
 videostreamaction
